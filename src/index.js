@@ -10,9 +10,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render((
 
     <FirebaseAppProvider firebaseConfig ={firebaseConfig}> 
-  <Suspense fallback= {'conectando Custocare... '}>
+    <Suspense fallback= {'conectando Custocare... '}>
     <App />
-   </Suspense>
+    </Suspense>
     </FirebaseAppProvider>
 
 ), document.getElementById('root') );

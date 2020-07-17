@@ -11,10 +11,10 @@ function BarraSuperior(){
                     <div><img className="custocareLogo" src={custocare} /></div>
                     <div className="align-self-center"><h1>Custocare</h1></div>
                 </div>
-                <div className="d-flex justify-content-center p-2 bd-highlight">
+                {/* <div className="d-flex justify-content-center p-2 bd-highlight">
                     <div className="align-self-center"><button className="pruebaBoton btn btn-primary   " type="submit">Hazte Cuidador</button></div>
                     <div className="align-self-center"><button className="pruebaBoton btn btn-primary" type="submit">Login</button></div>
-                </div>
+                </div> */}
             </div>
         </>
     );

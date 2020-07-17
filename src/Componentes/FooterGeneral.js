@@ -13,8 +13,11 @@ import Condiciones from '../Vistas/Condiciones';
 import Privacidad from '../Vistas/Privacidad';
 import Ubicanos from '../Vistas/Ubicanos';
 import custocare from '../custocare_logo.png';
+import Auth from './Auth';
+import {useUser} from 'reactfire';
 
 function FooterGeneral() {
+    const user = useUser();
     return (
         <>
             <Router>
@@ -37,18 +40,25 @@ function FooterGeneral() {
                     <Route exact path="/contacto">
                         <Contacto />
                     </Route>
+                    <Route path="/">
+                        <div className="App container mt-5 justify-content-center">   
+                            {user&&   <p>Usuario:{user.email}</p>}
+                            {user&&   <p>BIENVENID@</p>}
+                        </div>
+                        <Auth/>
+                    </Route>
                 </Switch>
                 <div className="d-flex flex-column align-items-center">
                     <div>
                         <img className="custocareLogoDos" src={custocare} />
                         <b>Custocare</b>
                     </div>
-                        <div className="contenedor d-flex flex-column align-items-center">
+                        <div className="container d-flex flex-column align-items-center">
                         <h5>Nuestros Servicios</h5>
                             <div className="btn-group">
                                 <ul>
                                     <li><Link to="/">Crear Cuenta/Ingresar</Link></li>
-                                    <li><Link to="/cuidador">Hazte/Entrar Como Cuidador</Link></li>
+                                    {/* <li><Link to="/cuidador">Hazte/Entrar Como Cuidador</Link></li> */}
                                     <li><Link to="/marketplace">Comprar/Rentar Equipo Médico</Link></li>
                                     <li><Link to="/reparacion">Reparar Equipo Médico</Link></li>
                                     <li><Link to="/ubicanos">Ubicanos En Tu Ciudad</Link></li>
