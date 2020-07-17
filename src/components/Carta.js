@@ -2,7 +2,7 @@ import React from "react";
 //import "./../components/Carta.css";
 import axios from "axios";
 import Carro from "./../components/Carro";
-
+import bootstrap from "react-bootstrap/card";
 
 
 const Carta= ({src, precioDeVenta, precioDeRenta, titulo}) => {
@@ -26,14 +26,17 @@ const Carta= ({src, precioDeVenta, precioDeRenta, titulo}) => {
     precioDeRenta:precioDeRenta,
   })
   .then(({data})=>{});}
+
 return( <> 
+<div productos="padre d-flex justify-content-around align-items-center"></div>
 <div className="card" > 
             <div className="card-body">
-              <img src={src}/>
-              <h5 className="card-title">{titulo}</h5>
+            <h5 className="card-title">{titulo}</h5>
+            <img src={src}/>
               <button onClick={agregarV}>Venta: ${precioDeVenta}         
               </button>
               <button onClick={agregarR}>Renta: ${precioDeRenta} por día</button>
+              
             </div>
 </div>
 </>
