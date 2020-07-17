@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function Terminos (){
     return(
+        <div className="container">
             <TemplateTerminos title="Condiciones Generales de Venta">
                 <h6>I - Sobre los Términos y Condiciones Generales de venta</h6>
                 <p>I.1 – Alcance de la aplicación</p>
@@ -11,6 +12,7 @@ function Terminos (){
                 <p>Los servicios ofrecidos en el sitio web son promovidos por la empresa Holidog, sociedad anónima con un capital de 46,537.20 euros matriculada al Registro de Comercio y de Empresas de Paris con el número 492909007 y con domicilio social en 54 rue de Paradis, 75010 Paris (en adelante «Holidog »).</p>
                 <p>El sitio web está alojado por la empresa basada en Estados Unidos, Amazon Web Services Inc, con oficina central en PO BOX 84023, Seattle, WA 98124-8423, USA</p>
             </TemplateTerminos>
+        </div>
     );
 }
 

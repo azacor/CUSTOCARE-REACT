@@ -53,8 +53,6 @@ function FooterGeneral() {
                                     <li><Link to="/reparacion">Reparar Equipo Médico</Link></li>
                                     <li><Link to="/ubicanos">Ubicanos En Tu Ciudad</Link></li>
                                 </ul>
-                            </div>
-                            <div className="btn-group">
                                 <ul>
                                     <li><Link to="/contacto">Contáctanos</Link></li>
                                     <li><Link to="/terminos">Términos</Link></li>

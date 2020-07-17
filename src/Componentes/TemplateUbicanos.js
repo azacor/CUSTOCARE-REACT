@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function TemplateUbicanos({children, ciudad}){
     const arr = Object.values({ciudad})
@@ -29,9 +30,8 @@ function TemplateUbicanos({children, ciudad}){
 
     return(
         <>
-        <h4>Queremos estar más cerca de ti y brindarte un apoyo personalizado!</h4>
         <h5>Por esto, estamos en {ciudad}:</h5>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex flex-column">
             {children}
             {ensenaCiudad()}
         </div>
