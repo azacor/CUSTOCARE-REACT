@@ -1,0 +1,39 @@
+/* Barra Superior */
+.custocareLogo{
+    width: 120px;
+    height: 125px;
+    margin: 10px;
+}
+.chatea{
+    width: 225px;
+    height: 375px;
+}
+.listaChatea li{
+    margin: 10px 0;
+    list-style: none;
+}
+.prueba{
+    border: 2px solid black;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    text-shadow: 5px 5px 3px rgba(128, 128, 128, 0.226);
+    font-weight: bold;
+}
+button{
+    margin: 5px;
+}
+
+/* Footer General */
+.contenedor{
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.custocareLogoDos{
+    width: 70px;
+    height: 75px;
+    margin: 10px;
+}
